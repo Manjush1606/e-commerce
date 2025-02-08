@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover elegant and stylish home decor items at HomeDecor.Store.">
+    <title>Home Decor Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background: url('homedecore.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+        }
+
+        .navmenu {
+            list-style: none;
+            display: flex;
+        }
+
+        .navmenu li {
+            margin-left: 20px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-home {
+            text-align: center;
+            padding: 1rem 1rem;
+            background-color: transparent;
+        }
+
+        .main-text-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-text h1, 
+        .main-text h5, 
+        .main-text p {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .fade {
+            animation: fadeEffect 3s infinite;
+        }
+
+        @keyframes fadeEffect {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .main-btn {
+            background-color: #8cd2f8;
+            color: rgb(46, 20, 8);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .main-btn:hover {
+            background-color: #f67423;
+        }
+
+        .nav-icon a {
+            margin-left: 10px;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>HomeDecor.Store</h1>
+
+        <ul class="navmenu">
+            <li><a href="">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customercare.html">Customercare</a></li>
+            <li><a href="aboutinfo.html.html">About</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="https://thedecorkart.com/?srsltid=AfmBOoroyqWiNk__fkqLvNEJZjQZG9XqugxuvXZVcqh4_xxx_K0173jt" aria-label="Search"><i class='bx bx-search'></i></a>
+            <a href="#" aria-label="User Account"><i class='bx bxs-user'></i></a>
+            <a href="#" aria-label="Cart"><i class='bx bx-cart'></i></a>
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text-container">
+            <div class="main-text">
+                <h5>Exclusive Home Decor Collections</h5>
+                <h1>Make Your Home <br> Elegant & Stylish</h1>
+                <p>Shop the latest home decor pieces and transform your living space.</p>
+                <a href="shop.html" class="main-btn">Explore Now <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

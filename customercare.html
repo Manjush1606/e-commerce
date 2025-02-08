@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care - Home Decor Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('customercare.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #131b11;
+            text-align: center;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+        }
+        form {
+            background: rgba(225, 207, 219, 0.9);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(252, 252, 252, 0.785);
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #060507;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #118e89;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #acd7d3;
+        }
+        h1 {
+            color: #e8eced;
+        }
+        p.contact-info {
+            background: rgba(255, 255, 255, 0.873);
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Care</h1>
+    <p>Need help? Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+    <form action="#">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Your Name" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" type="email" placeholder="Your Email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p class="contact-info">
+        📞 Call us: +1 234 567 890<br>
+        📧 Email: support@homedecor.store<br>
+        🕒 Working Hours: Monday to Friday, 9 AM - 6 PM<br>
+        📍 Address: 123 Home Decor Avenue, Interior City, USA
+    </p>
+
+</body>
+</html>

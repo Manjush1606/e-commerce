@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover elegant and stylish home decor items at HomeDecor.Store.">
+    <title>Home Decor Store - Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+        }
+
+        .navmenu {
+            list-style: none;
+            display: flex;
+        }
+
+        .navmenu li {
+            margin-left: 20px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .shop-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            margin-top: 1rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #118e89;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .product-rating {
+            color: #f4d03f;
+            margin: 0.5rem 0;
+        }
+
+        .product-description {
+            color: #555;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        .buy-btn {
+            background-color: #118e89;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .buy-btn:hover {
+            background-color: #0f6d67;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>HomeDecor.Store</h1>
+
+        <ul class="navmenu">
+            <li><a href="index.html.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customercare.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#" aria-label="Search"><i class='bx bx-search'></i></a>
+            <a href="#" aria-label="User Account"><i class='bx bxs-user'></i></a>
+            <a href="#" aria-label="Cart"><i class='bx bx-cart'></i></a>
+        </div>
+    </header>
+
+    <section class="shop-section">
+        <div class="product-card">
+            <img src="lamp.jpg" alt="Elegant Lamp">
+            <div class="product-info">
+                <div class="product-title">Elegant Lamp</div>
+                <div class="product-price">3500</div>
+                <div class="product-rating">★★★★★</div>
+                <div class="product-description">Brighten up your living space with this stylish lamp.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="vase.jpg" alt="Decorative Vase">
+            <div class="product-info">
+                <div class="product-title">Decorative Vase</div>
+                <div class="product-price">2000</div>
+                <div class="product-rating">★★★★☆</div>
+                <div class="product-description">Add elegance to your room with this beautiful vase.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="wallpic.webp" alt="Wall Art">
+            <div class="product-info">
+                <div class="product-title">Wall Art</div>
+                <div class="product-price">1999</div>
+                <div class="product-rating">★★★★★</div>
+                <div class="product-description">Transform your walls with this stunning art piece.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="chair.avif" alt="Modern Chair">
+            <div class="product-info">
+                <div class="product-title">Modern Chair</div>
+                <div class="product-price">4500</div>
+                <div class="product-rating">★★★★☆</div>
+                <div class="product-description">Sit in style and comfort with this sleek modern chair.</div>
+                <a href="" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="cushion.avif" alt="Stylish Cushion">
+            <div class="product-info">
+                <div class="product-title">Stylish Cushion</div>
+                <div class="product-price">999</div>
+                <div class="product-rating">★★★★☆</div>
+                <div class="product-description">Enhance comfort and style with this premium cushion.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="rug.jpg" alt="Rug Collection">
+            <div class="product-info">
+                <div class="product-title">Elegant Rug Collection</div>
+                <div class="product-price">8000</div>
+                <div class="product-rating">★★★★★</div>
+                <div class="product-description">Elevate your living space with luxurious rugs.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="mirror.webp" alt="Decorative Mirror">
+            <div class="product-info">
+                <div class="product-title">Decorative Mirror</div>
+                <div class="product-price">$2999</div>
+                <div class="product-rating">★★★★☆</div>
+                <div class="product-description">A sleek mirror to enhance your room's elegance.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="curtains.jpg" alt="Luxury Curtains">
+            <div class="product-info">
+                <div class="product-title">Luxury Curtains</div>
+                <div class="product-price">6999</div>
+                <div class="product-rating">★★★★★</div>
+                <div class="product-description">Block light and add elegance with these curtains.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

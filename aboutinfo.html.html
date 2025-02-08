@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about HomeDecor.Store and our passion for stylish home decor.">
+    <title>About Us - HomeDecor.Store</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to right, #118e89, #0d6b6a);
+            padding: 1.5rem;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 2rem 5%;
+            background: white;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #118e89;
+            margin-bottom: 1rem;
+            animation: fadeIn 1.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        .features-list li {
+            background: #e0f7f5;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            animation: slideIn 1.5s ease;
+        }
+
+        .features-list li i {
+            color: #118e89;
+            margin-right: 10px;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 2s;
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .main-btn {
+            display: inline-block;
+            background: #118e89;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .main-btn:hover {
+            background: #0d6b6a;
+        }
+
+        .btn-center {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>About HomeDecor.Store</h1>
+    </header>
+
+    <main>
+        <h2 class="section-title">Our Story</h2>
+
+        <div class="content">
+            <div class="about-text">
+                <p>Welcome to HomeDecor.Store, your go-to destination for elegant and stylish home decoration solutions. Our passion is to transform ordinary spaces into extraordinary homes with carefully curated decor items. From luxurious furniture to exquisite wall art, we offer everything you need to create a living space that reflects your unique style.</p>
+
+                <h3>Why Choose Us?</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> High-Quality Products for Every Room</li>
+                    <li><i class="fas fa-check-circle"></i> Exclusive and Unique Collections</li>
+                    <li><i class="fas fa-check-circle"></i> Fast and Reliable Shipping</li>
+                    <li><i class="fas fa-check-circle"></i> Exceptional Customer Service</li>
+                    <li><i class="fas fa-check-circle"></i> Satisfaction Guaranteed</li>
+                </ul>
+            </div>
+            
+            <div class="image-section">
+                <img src="homedecor-store.jpg" alt="Beautiful Home Decor Image">
+            </div>
+        </div>
+
+        <div class="btn-center">
+            <a href="shop.html" class="main-btn">Explore the products!</a>
+        </div>
+    </main>
+
+</body>
+</html>
